@@ -1,4 +1,4 @@
-# KidsRuby
+# This is a fork of https://github.com/hybridgroup/kidsruby with russian localization
 
 KidsRuby (http://kidsruby.com) is a Ruby programming environment meant for kids. If what you want is just to download/install KidsRuby, please go to http://kidsruby.com/download
 
