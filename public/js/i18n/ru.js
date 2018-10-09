@@ -1,18 +1,18 @@
 {
   "buttons": {
-    "run": "Run",
-    "clear": "Clear",
-    "open": "Open",
-    "save": "Save",
-    "stop": "Stop"
+    "run": "Запуск",
+    "clear": "Очистить",
+    "open": "Открыть",
+    "save": "Сохранить",
+    "stop": "Стоп"
   },
   "tabs": {
-    "help-link": "Help",
-    "output-link": "Output",
-    "turtle-link": "Turtle"
+    "help-link": "Помощь",
+    "output-link": "Вывод",
+    "turtle-link": "Черепаха"
   },
   "editor": {
-    "your-code": "Type in your code just below here",
-    "confirm-clear": "Are you sure you want to clear all your Ruby code from the editor?"
+    "your-code": "Введите код здесь",
+    "confirm-clear": "Вы уверены, что хотите очистить весь свой Ruby код в редакторе?"
   }
 }
