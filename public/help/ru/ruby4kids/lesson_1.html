@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Ruby4Kids - Programming For The Fun Of It</title>
+  <title>Ruby4Kids - Программирование для удовольствия</title>
 
   <!-- Load styles -->
   <link rel="stylesheet" href="../../../css/blitzer/jquery-ui-1.8.16.custom.css" type="text/css" media="screen" title="style" charset="utf-8">
@@ -26,82 +26,84 @@
 </head>
 
 <body class="lesson-set">
-  <h1>Ruby4Kids - Game Programming</h1>
+  <h1>Ruby4Kids - Разработка игры</h1>
   <nav id="top">
-      <a href="#back" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <a href="#back" class="prev-lesson">&laquo; Назад</a>
+      <a href="index.html">Вернуться к урокам</a>
+      <a href="#next" class="next-lesson">Дальше &raquo;</a>
   </nav>
 
 
-  <article class="lesson"><h1>Lesson 1 - Getting Started</h1>
+  <article class="lesson"><h1>Урок 1 - Начало</h1>
     <section class="page">
-      <p>Since you are using KidsRuby, you are ready to get started making your first game using Gosu.</p>
-      <p>This is the file that will contain our first program.</p>
-      <p>We will use the gosu library. We will do this by typing:</p>
+      <p>Так как вы используете KidsRuby, вы готовы начать создавать вашу первую игру с использованием Gosu.</p>
+      <p>Этот файл будет содержать нашу первую программу.</p>
+      <p>Мы будем использовать библиотеку gosu. Напишем следующий код:</p>
       <pre id="code-1-1" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p>We will then start our game by inheriting from the <code>Gosu</code> class.</p>
-      <p>We will call our game <code>MyGame</code> like this:</p>
+      <p>Далее мы начнем нашу игру унаследовав от класса <code>Gosu</code>.</p>
+      <p>Назовем нашу игру <code>MyGame</code> так:</p>
       <pre id="code-1-2" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p>Now, inside of this class, <code>Gosu</code> needs us to define three methods:</p>
-      <p>We define our methods like so:</p>
+      <p>Теперь внутри класса <code>Gosu</code> мы должны объявить три метода:</p>
+      <p>Объявим наши методы таким образом:</p>
       <pre id="code-1-3" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p>What happens here is that when the game starts, the <code>initialize</code> method is called. Then the game stays running and it goes in a loop, calling the methods: <code>update</code> and <code>draw</code>.</p>
-      <p>Update, then draw. Update, then draw. Update, then draw. This cycle repeats several times a second.</p>
+      <p>Когда стартует игра - выполняется метод <code>initialize</code>. Когда игра запущена, вызывается цикл, в котором выполняются методы: <code>update</code> и <code>draw</code>.</p>
+      <p>Update, потом draw. Update, потом draw. Update, потом draw. Этот цикл повторяется несколько раз в секунду.</p>
 
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <a href="#prev" class="prev-lesson">&laquo; Назад</a>
+      <a href="index.html">Вернуться к Урокам</a>
+      <a href="#next" class="next-lesson">Дальше &raquo;</a>
 
     </section>
   </article>
 
 
-  <article class="lesson"><h1>Lesson 1 - Create A Window</h1>
-    <section class="page"><h1>Create A Window</h1>
-      <p>OK, so we are almost ready to run this code. The next step that we need to do now is tell <code>Gosu</code> how big a window we want for the game.</p>
-      <p>We do this in the <code>initialize</code> method, by passing it three parameters like this:</p>
+  <article class="lesson"><h1>Урок 1 - Создадим Окно</h1>
+    <section class="page"><h1>Создание Окна</h1>
+      <p>Итак, мы почти готовы запустить этот код. Следующим шагом мы должны указать <code>Gosu</code> какого размера будет окно для игры.</p>
+      <p>Сделаем это в методе <code>initialize</code>, передав три параметра:</p>
       <pre id="code-1-4" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p>What this does, is make the window 300 pixels wide by 400 pixels high. A pixel is a single dot in your screen. If you put your face right next to the display, you can almost see the dots. Those are called pixels.</p>
-      <p>The third parameter you pass to the initialize method is false. This tells gosu not to take over the whole sreen. So we will say false for this.</p>
-      <p>OK, we are almost ready to see if this works.</p>
-      <p>To show what we have so far, we have to use the class we just defined in our program.</p>
+      <p>Это задаст окну ширину в 300 пикселей и высоты 400 пикселей. Пиксель - это точка на вашем экране. Если вы придвинете экран монитора вплотную к лицу, вы почти сможете увидеть точки. Они называются пикселями.</p>
+      <p>Третий параметр, который мы передадим в метод initialize будет false. Это скажет gosu не занимать весь экран. Поэтому мы укажем false.</p>
+      <p>Итак, мы почти готовы запустить код и увидеть будет ли он работать.</p>
+      <p>Для этого используем класс, который мы объявили в программе.</p>
       <p>We do this by adding the following after the class definition:</p>
+      <p>Для этого укажем следующее после объявления класса:</p>
       <pre id="code-1-5" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p>The first line creates an instance of the new game. Then, calling the <code>show</code> method, tells the game to show the game window.</p>
+      <p>Первая строка создает экземпляр новой игры. Затем, вызывая метод <code>show</code>, укажем игре что необходимо показать окно игры .</p>
 
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <a href="#prev" class="prev-lesson">&laquo; Назад</a>
+      <a href="index.html">Назад к урокам</a>
+      <a href="#next" class="next-lesson">Дальше &raquo;</a>
 
     </section>
   </article>
 
 
-  <article class="lesson"><h1>Lesson 1 - Run It!</h1>
-    <section class="page"><h1>Run Your Program</h1>
-      <p>We are now ready to run the program.</p>
-      <p>Now, just click on the "Run" button</p>
-      <p>If everything worked correctly, you will have seen your screen show up. You have written your first game program!</p>
+  <article class="lesson"><h1>Урок 1 - Запустим код!</h1>
+    <section class="page"><h1>Выполнение программы</h1>
+      <p>Мы готовы запустить программу.</p>
+      <p>Теперь клацнем кнопку "Запустить"</p>
+      <p>Если все сработало правильно, вы увидите окно игры. Вот вы и написали свою первую игру!</p>
       <p>Here is the entire program you should have written so far:</p>
+      <p>Вот как должен выглядеть код программы:</p>
       <pre id="code-1-6" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p>Granted, this does not do anything exciting, but at least you now know how to open a window in a computer game.</p>
-      <p>Now you are ready to go on to <a href="lesson_2.html">Lesson 2</a>.</p>
+      <p>Пока наш код не делает ничего интересного, но по крайней мере вы знаете как создать окно в компьютерной игре.</p>
+      <p>Теперь вы готовы перейти к <a href="lesson_2.html">Уроку 2</a>.</p>
 
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <a href="#prev" class="prev-lesson">&laquo; Назад</a>
+      <a href="index.html">Назад к Урокам</a>
+      <a href="#next" class="next-lesson">Дальше &raquo;</a>
 
     </section>
   </article>
 
-  <a href="#top">Back to top</a>
+  <a href="#top">Пролистать наверх</a>
 </body>
 </html>
 
