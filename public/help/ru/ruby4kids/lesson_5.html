@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Ruby4Kids - Programming For The Fun Of It</title>
+  <title>Ruby4Kids - Программирование для удовольствия</title>
 
   <!-- Load styles -->
   <link rel="stylesheet" href="../../../css/blitzer/jquery-ui-1.8.16.custom.css" type="text/css" media="screen" title="style" charset="utf-8">
@@ -28,102 +28,123 @@
 </head>
 
 <body class="lesson-set">
-  <h1>Ruby4Kids - Game Programming - Lesson 5</h1>
+  <h1>Ruby4Kids - Программирование Игр - Урок 5</h1>
   <nav id="top">
-    <a href="#back" class="prev-lesson">&laquo; Back</a>
-    <a href="index.html">Back to Lessons</a>
-    <a href="#next" class="next-lesson">Next &raquo;</a>
+    <a href="#back" class="prev-lesson">&laquo; Назад</a>
+    <a href="index.html">Вернуться к урокам</a>
+    <a href="#next" class="next-lesson">Дальше &raquo;</a>
   </nav>
 
-  <article class="lesson"><h1>Lesson 5 - Moving Right, Up, and Down</h1>
-    <section class="page"><h1>This is Ruby4Kids</h1>
+  <article class="lesson"><h1>Урок 5 - Движение вправо, верх, и вниз</h1>
+    <section class="page"><h1>Это Ruby4Kids</h1>
 
-      <p>Now, we're going to learn how to move right, up, and down. To move right, we need to add another <code>if</code> statement to the <code>def update</code> under the class <code>MyGame</code>. So, let's add an <code>if</code> statement for the right key:</p>
+      <p>Теперь мы научимся двигаться вправо, вверх и вниз.
+        Чтобы двигаться вправо нам нужна еще одна <code>if</code> инструкция в коде в методе <code>def update</code> внутри класса<code>MyGame</code>. Итак, добавим <code>if</code> инструкцию для стрелки "Вправо":</p>
       <pre id="code-5-1" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p>The part above is the same as the code for turning left, except that now we type <code>KbRight</code> instead of <code>KbLeft</code>.</p> 
+      <p>Этот код точно такой же как и для поворота влево, только мы укажем <code>KbRight</code> вместо <code>KbLeft</code>.</p>
 
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <a href="#prev" class="prev-lesson">&laquo; Назад</a>
+      <a href="index.html">Вернуться к урокам</a>
+      <a href="#next" class="next-lesson">Дальше &raquo;</a>
 
     </section>
   </article>
 
 
 
-  <article class="lesson"><h1>Lesson 5 - Moving Right, Up, and Down</h1>
-    <section class="page"><h1>Plus 10</h1>
+  <article class="lesson"><h1>Урок 5 - Движение вправо, вверх, и вниз</h1>
+    <section class="page"><h1>Плюс 10</h1>
 
-      <p> Now, we're going to be going to the <code>Player</code> class and adding: </p>
-   
+      <p> Теперь откроем код класса <code>Player</code> и добавим следующее: </p>
+
       <pre id="code-5-2" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p> So, this time the code is a bit less similar to what we did in the last lesson. You'll notice that we added <code>+ 10</code> instead of <code>- 10</code>, because we're going right instead of left. </p>
+      <p> В этот раз код меньше похож на тот, который мы писал ив предыдущем уроке. Мы добавили <code>+ 10</code> вместо <code>- 10</code>, потому что мы будем двигаться вправо, а не влево. </p>
 
-      <p> Another difference is that we limit the icon by the game window's width and then subtract a certain amount of pixels from that width. Now, we subtract those pixels, because the position x is actually on the left side of the icon. That means that we have to make up for that amount by subtracting from the pixel count. You can try putting in different numbers within: </p>
+      <p> Еще одно отличие в том что мы ограничим иконку шириной окна и вычтем определенное количество пикселей  из ширины окна.
+        Теперь вычитаем эти пиксели потому что точка Х пасположена слева от иконки.
+        Это значит что мы можемполучить это расстояние путем вычитания пикселей.
+        Вы можете попробовать задавать разные числа: </p>
       <pre id="code-5-3" class="sampleCode">Code automatically inserted here...</pre>
-      <p> to see what I mean, as long as both the numbers match up. </p>
+      <p> для того чтобы поэкспериментировать но с условием, что оба числа совпадают (равны по модулю - прим. переводчика). </p>
 
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <a href="#prev" class="prev-lesson">&laquo; Назад</a>
+      <a href="index.html">Вернуться к урокам</a>
+      <a href="#next" class="next-lesson">Дальше &raquo;</a>
 
     </section>
   </article>
 
 
 
-  <article class="lesson"><h1>Lesson 5 - Moving Right, Up, and Down</h1>
-    <section class="page"><h1>Moving Up</h1>
+  <article class="lesson"><h1>Урок 5 - Движение вправо, вверх, и вниз</h1>
+    <section class="page"><h1>Движение вверх</h1>
 
-      <p> OK, now that we've accomplished going left and right, we're going to try out how to go up. So, we'll first type the following code under the <code>def update</code> in the <code>MyGame</code> class
+      <p> OK, now that we've accomplished going left and right, we're going to try out how to go up.
+      <p> Итак, мы закончили с движением влево и вправо, тперь попробуем сделать движение вверх.
+        Добавим следующий код в метод <code>def update</code> класса <code>MyGame</code>
       <pre id="code-5-4" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p>So, that part was familiar. Now, we're going to go to the <code>Player</code> class and add: </p>
+      <p>Эта часть нам знакома. Теперь откроем класс <code>Player</code> и добавим: </p>
       <pre id="code-5-5" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p> Now, you'll notice that both the <code>if</code> and <code>else</code> statements are both different than what we did before. The first difference is that we're now using a y coordinate. The y coordinate is used, because we are going up and down (in this case, up), rather than left and right, just like on a grid!</p>
+      <p> Now, you'll notice that both the <code>if</code> and <code>else</code> statements are both different than
+      <p> Вы увидите что код внутри <code>if</code> и <code>else</code> инструкцийотличается от того что мы делали ранее.
+        Первое отличие что сейчас мы используем Y координату.
+        Y координата используется потому что двигаемся ввер и вниз (в этом случае -- вверх), а не как раньше - влево и вправо.</p>
 
-      <p> So, you might also be wondering, why is the formula <code>y < 0</code>? Isn't <code>y < 0</code> supposed to be for going down? That would have been the case, had the pixel count increased as you went up. Instead, it's the other way around. </p>
+      <p> Вы могли бы спросить: почему используется формула <code>y < 0</code>? Разве при <code>y < 0</code> мы не должны двигаться вниз?
+        That would have been the case, had the pixel count increased as you went up.
+        Это было бы так, если бы отсчет пикселей увеличивался при движении вверх.
+        Но на самом деле - все наоборот. </p>
 
-      <p> Basically, it means that the very top of the screen is at 0.00 and increases as you go down the y-axis. So, as the icon moves up, it's actually decreasing the pixel count. This decrease in count is also the reason why we have a <code>- 10</code> instead of a <code>+ 10</code>.</p>. 
+      <p>
+        Это означает что самый верх экрана иммет координату 0.00 и увеличивается когда вы двигаетесь вниз по оси Y.
+        Поэтому когда иконка двигается вверх, количество пикселей уменьшается.
 
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+        Уменьшение пикселей также является причиной того что мы имеем <code>- 10</code> вместо <code>+ 10</code>.</p>.
+
+      <a href="#prev" class="prev-lesson">&laquo; Назад</a>
+      <a href="index.html">Вернуться к урокам</a>
+      <a href="#next" class="next-lesson">Дальше &raquo;</a>
 
     </section>
   </article>
 
 
 
-  <article class="lesson"><h1>Lesson 5 - Moving Right, Up, and Down</h1>
+  <article class="lesson"><h1>Урок 5 - Движение вправо, вверх, и вниз</h1>
     <section class="page"><h1>Moving Down</h1>
-      <p> Now, let's finish up by adding the <code>move_down</code> code. These steps  should look really familiar to the steps where we learned how to move right. First, let's write the following under the class <code>MyGame</code>, right below <code>def update</code>:
+      <p> Итак, закончим добавив <code>move_down</code> код.
+        Следующие шаги выглядят похожими на те, которые задают движение вправо.
+        Сначала добавим следующее в класс <code>MyGame</code>, сразу под <code>def update</code>:
 
       <pre id="code-5-6" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p>Finally, we'll type the following under the <code>player</code> class </p>
+      <p>Наконец, добавить такой код в класс <code>player</code> </p>
 
       <pre id="code-5-7" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p> So, the only difference that you'll see here is that the <code>- 10</code> is changed to <code>+ 10</code>, because the numbers increase as you go down :). That's it for moving around!</p> 
+      <p> Единственное отличие которое вы увидели это что  <code>- 10</code> поменялось на <code>+ 10</code>,
+        потому что число уменьшается, когда вы двигаетесь вниз :)
+        because the numbers increase as you go down :). Вот и все что касается движения!</p>
       
-      <p>Here is the entire program you should have written so far:</p>
+      <p>Вот как должна выглядеть вся программа на этот момент:</p>
       <pre id="code-5-8" class="sampleCode">Code automatically inserted here...</pre>
 
-      <p>You've accomplished so much already, so why stop?! How about we turn up the heat and add some <a href="lesson_6.html">dodgeballs in lesson 6</a>!</p>
+      <p>Уже много сделано, но мы на этом не остановимся :)!
+        В следующем уроке  <a href="lesson_6.html">мы добавим несколько мячиков (Урок 6)</a>!</p>
 
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <a href="#prev" class="prev-lesson">&laquo; Назад</a>
+      <a href="index.html">Вернуться к урокам</a>
+      <a href="#next" class="next-lesson">Далее &raquo;</a>
 
     </section>
   </article>
 
    
-<a href="#top">Back to top</a>
+<a href="#top">Пролистать наверх</a>
 
 </body>
 </html>
