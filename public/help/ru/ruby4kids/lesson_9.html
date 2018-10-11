@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Ruby4Kids - Programming For The Fun Of It</title>
+  <title>Ruby4Kids - Программирование для удовольствия</title>
 
   <!-- Load styles -->
   <link rel="stylesheet" href="../../../css/blitzer/jquery-ui-1.8.16.custom.css" type="text/css" media="screen" title="style" charset="utf-8">
@@ -28,86 +28,86 @@
 </head>
 
 <body class="lesson-set">
-  <h1>Ruby4Kids - Game Programming - Lesson 9</h1>
+  <h1>Ruby4Kids - Программирование Игры - Урок 9</h1>
   <nav id="top">
-    <a href="#back" class="prev-lesson">&laquo; Back</a>
-    <a href="index.html">Back to Lessons</a>
-    <a href="#next" class="next-lesson">Next &raquo;</a>
+    <a href="#back" class="prev-lesson">&laquo; Предыдущий</a>
+    <a href="index.html">Вернуться к Урокам</a>
+    <a href="#next" class="next-lesson">Следующий &raquo;</a>
   </nav>
 
-  <article class="lesson"><h1>Lesson 9 - Creating Multiple Balls</h1>
-    <section class="page"><h1>I Can Barely Fit in this Window</h1>
+  <article class="lesson"><h1>Урок 9 - Создание Нескольких Шаров</h1>
+    <section class="page"><h1>Я еле помещаюсь в это Окно</h1>
 
-      <p>Now that we are going to add more balls to dodge, we should create a larger window to work in.</p>
+      <p>Теперь, когда мы собираемся добавить больше шаров, чтобы уклониться, мы должны создать большее окно для работы.</p>
 
-      <p> So, in order to do that, let's go to the <code>MyGame</code> class and under <code>def initialize</code>, let's change the numbers to <code>(600, 400, false)</code>. The result should look like this:</p>
+      <p> Итак, чтобы сделать это, давай перейдем к <code>MyGame</code> класс и под <code>def initialize</code>, давай поменяем число на <code>(600, 400, false)</code>. Результат должен выглядеть следующим образом:</p>
 
-      <pre id="code-9-1" class="sampleCode">Code automatically inserted here...</pre>
+      <pre id="code-9-1" class="sampleCode">Код добавится сюда автоматически...</pre>
 
-      <p>Then, we'll just adjust the player to start off at the bottom of the screen. First, we need to go to the <code>player</code> class. Now, let's change the x coordinate of the player to 150 and the y coordinate to 330. Your result should look like this:</p>
+      <p>Затем мы просто настроим Игрока чтобы он стартовал в нижней части экрана. Для начала, мы должны открыть класс <code>player</code>. Теперь давай изменим координату x игрока на 150 и координату y на 330. Твой результат должен выглядеть следующим образом:</p>
 
-      <pre id="code-9-2" class="sampleCode">Code automatically inserted here...</pre>
+      <pre id="code-9-2" class="sampleCode">Код добавится сюда автоматически...</pre>
 
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
-
-    </section>
-  </article>
-
-
-
-  <article class="lesson"><h1>Lesson 9 - Creating Multiple Balls</h1>
-    <section class="page"><h1>Pluralize!</h1>
-
-      <p>Now, let's try adding 3 more balls! So, we'll go to the <code>MyGame</code> class and change some things under <code>def initialize</code>:</p>
-
-      <pre id="code-9-3" class="sampleCode">Code automatically inserted here...</pre>
-
-      <p>All we did above was pluralize <code>ball</code> and then changed the code to create 3 balls, instead of one.</p>
-      <p>Next, let's update each ball, instead of just updating one of them. We'll also pluralize the <code>@ball</code>. So,under the class, <code>MyGame</code>, we'll go ahead and change the code to:</p>
-
-      <pre id="code-9-4" class="sampleCode">Code automatically inserted here...</pre>
-
-      <p> Next, we're going to do some more of the same stuff. So, we'll go to <code>def draw</code> to pluralize <code>@ball</code> and to change the code so that it draws each ball, instead of just one. You should end up with the following:</p>
-
-      <pre id="code-9-5" class="sampleCode">Code automatically inserted here...</pre>
-
-      <p>Since we're already pluralizing, why don't we go ahead and do some more! So, we'll go to the class, <code>Player</code>, and change it to the following: </p>
-
-      <pre id="code-9-6" class="sampleCode">Code automatically inserted here...</pre>
-
-      <p> Again, we're just adjusting the methods, so that they will work with multiple balls. For the code above, we have added the method, <code>any?</code>, which just means that being hit by any one of the balls will cause a hit. </p>
-
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <a href="#prev" class="prev-lesson">&laquo; Предыдущий</a>
+      <a href="index.html">Вернуться к Урокам</a>
+      <a href="#next" class="next-lesson">Следующий &raquo;</a>
 
     </section>
   </article>
 
 
 
-  <article class="lesson"><h1>Lesson 9 - Creating Multiple Balls</h1>
-    <section class="page"><h1>No More Pluralizing...Maybe</h1>
+  <article class="lesson"><h1>Урок 9 - Создание Нескольких Шаров</h1>
+    <section class="page"><h1>Образование множественного числа - Pluralize!</h1>
 
-      <p>Now, you must hate pluralizing by now, so we'll stop....right after this next pluralization! So, we'll go to the class, <code>MyGame</code>, and change the restart game definition to the following:</p>
+      <p>Теперь давайте попробуем добавить еще 3 шара! Итак, мы перейдем к классу <code>MyGame</code> и изменим несколько вещей в <code>def initialize</code>:</p>
 
-      <pre id="code-9-7" class="sampleCode">Code automatically inserted here...</pre>
-      <p>You're done capitalizing (promise)! Now, let's just look over what all of your code should look like:</p>
+      <pre id="code-9-3" class="sampleCode">Код добавится сюда автоматически...</pre>
 
-      <pre id="code-9-8" class="sampleCode">Code automatically inserted here...</pre>
+      <p>Все, что мы делали выше, было размноженожение <code>ball</code> и затем изменили код чтобы создать 3 шара вместо одного.</p>
+      <p>Далее, обновим каждый шар, вместо того, чтобы просто обновлять один из них. Мы также размножим <code>@ball</code>. Итак, в классе <code>MyGame</code>, мы продолжим изменять код на:</p>
 
-      <p>Can it be? Is this the end? Have you really gone through the entire tutorial? The answer is, YES! CONGRATULATIONS, YOU MADE IT! You developed a program that you can play on and show off! We hope you'll continue your interest into programming, because if you've made it this far, you've got what it takes :).</p>
+      <pre id="code-9-4" class="sampleCode">Код добавится сюда автоматически...</pre>
 
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <p> Далее, мы собираемся сделать еще кое-что из этой штуки. Итак, мы откроем <code>def draw</code> чтобы рамножить <code>@ball</code> и изменить код так, чтобы он рисовал каждый шар, а не только один. Вы должны получить следующее:</p>
+
+      <pre id="code-9-5" class="sampleCode">Код добавится сюда автоматически...</pre>
+
+      <p>Так как мы уже производим образование множественного числа, почему бы нам не пойти дальше и не сделать еще! Далее, откроем класс <code>Player</code>, и изменить его на следующие: </p>
+
+      <pre id="code-9-6" class="sampleCode">Код добавится сюда автоматически...</pre>
+
+      <p> Опять же, мы просто изменяем методы, чтобы они работали с несколькими шарами. Для кода выше, мы добавили метод, <code>any?</code>,что просто означает, что попадание любого из шаров вызовет удар. </p>
+
+      <a href="#prev" class="prev-lesson">&laquo; Предыдущий</a>
+      <a href="index.html">Вернуться к Урокам</a>
+      <a href="#next" class="next-lesson">Следующий &raquo;</a>
 
     </section>
   </article>
 
-      <a href="#top">Back to top</a>
+
+
+  <article class="lesson"><h1>Урок 9 - Создание Нескольких Шаров</h1>
+    <section class="page"><h1>Никакого размножения...Возможно</h1>
+
+      <p>Теперь вы должны ненавидеть плюрализацию к настоящему времени, поэтому мы остановимся....сразу после следующей плюрализации! Далее, мы откроем класс <code>MyGame</code>, и изменим определение перезагрузки игры на следующие:</p>
+
+      <pre id="code-9-7" class="sampleCode">Код добавится сюда автоматически...</pre>
+      <p>Мы закончили с печатаньем (честное слово)! Теперь давайте просто посмотрим, как выглядит весь ваш код:</p>
+
+      <pre id="code-9-8" class="sampleCode">Код добавится сюда автоматически...</pre>
+
+      <p>Неужели всё? Это финиш? Ты действительно прошёл весь учебник? Ответ ДА! ПОЗДРАВЛЯЮ, ТЫ СДЕЛАЛ ЭТО! Ты разработал программу, в которой можешь играть и гордится ею! Мы надеемся, что ты продолжишь проявлять интерес к программированию, потому что если ты зашёл так далеко, у тебя уже есть все, что нужно :).</p>
+
+      <a href="#prev" class="prev-lesson">&laquo; Предыдущий</a>
+      <a href="index.html">Вернуться к Урокам</a>
+      <a href="#next" class="next-lesson">Следующий &raquo;</a>
+
+    </section>
+  </article>
+
+      <a href="#top">Вернуться в начало</a>
 
 </body>
 </html>
