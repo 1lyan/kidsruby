@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Ruby4Kids - Programming For The Fun Of It</title>
+  <title>Ruby4Kids - Программирование для удовольствия</title>
 
   <!-- Load styles -->
   <link rel="stylesheet" href="../../../css/blitzer/jquery-ui-1.8.16.custom.css" type="text/css" media="screen" title="style" charset="utf-8">
@@ -28,97 +28,97 @@
 </head>
 
 <body class="lesson-set">
-  <h1>Ruby4Kids - Game Programming - Lesson 8</h1>
+  <h1>Ruby4Kids - Программирование Игры - Урок 8</h1>
   <nav id="top">
-    <a href="#back" class="prev-lesson">&laquo; Back</a>
-    <a href="index.html">Back to Lessons</a>
-    <a href="#next" class="next-lesson">Next &raquo;</a>
+    <a href="#back" class="prev-lesson">&laquo; Предыдущий</a>
+    <a href="index.html">Вернуться к Урокам</a>
+    <a href="#next" class="next-lesson">Следующий &raquo;</a>
   </nav>
 
-  <article class="lesson"><h1>Lesson 8 - Escape Key Pauses the Game</h1>
-    <section class="page"><h1>Commenting and Else</h1>
+  <article class="lesson"><h1>Урок 8 - Клавиша Escape - Пауза для Игры</h1>
+    <section class="page"><h1>Комментирование и прочее</h1>
 
-      <p>In this lesson, we want to make the game reset by pressing the escape key. So, let’s go to the MyGame class and find where we typed the following:</p>
+      <p>В этом уроке мы будем делать перезагрузку игры, нажав клавишу Escape. Итак, давайте перейдем к классу MyGame и найдем, где мы ввели следующие:</p>
 
-      <pre id="code-8-1" class="sampleCode">Code automatically inserted here...</pre>
+      <pre id="code-8-1" class="sampleCode">Код добавится сюда автоматически...</pre>
 
-      <p>Now, right under the code above, we’re going to type:</p>
+      <p>Теперь, прямо под кодом выше, мы введём:</p>
 
-      <pre id="code-8-2" class="sampleCode">Code automatically inserted here...</pre>
+      <pre id="code-8-2" class="sampleCode">Код добавится сюда автоматически...</pre>
 
-      <p>What we did above was add an <code>else</code> statement, which occurs after the game is stopped. </p>
+      <p>То, что мы сделали выше, было добавление <code>else</code> оператор, который вызывается после того, как игра остановлена. </p>
 
-      <p>So, we wrote a comment under the <code>else</code>statement, which tells us that the game is currently stopped. After that, we wrote a command that should look familiar. This code just says that if the escape key is pressed, the game restarts. </p>
+      <p>Итак, мы написали комментарий после оператора <code>else</code>, который говорит нам, что игра в настоящее время остановлена. После этого мы написали команду, которая должна выглядеть знакомой. Этот код просто говорит, что если клавиша Escape нажата, игра перезапускается. </p>
 
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <a href="#prev" class="prev-lesson">&laquo; Предыдущий</a>
+      <a href="index.html">Вернуться к Урокам</a>
+      <a href="#next" class="next-lesson">Следующий &raquo;</a>
    
     </section>
   </article>
 
 
-  <article class="lesson"><h1>Lesson 8 - Escape Key Pauses the Game</h1>
-    <section class="page"><h1>Fine, let's Define</h1>
+  <article class="lesson"><h1>Урок 8 - Клавиша Escape - Пауза для Игры</h1>
+    <section class="page"><h1>Определения - Define</h1>
 
-      <p>Now, we just go further down where we have:</p>
+      <p>Теперь мы просто идем дальше, где у нас есть:</p>
 
-      <pre id="code-8-3" class="sampleCode">Code automatically inserted here...</pre>
+      <pre id="code-8-3" class="sampleCode">Код добавится сюда автоматически...</pre>
 
-      <p>Right underneath the code above, we are going to write:</p>
+      <p>Прямо под кодом выше, мы напишем:</p>
 
-      <pre id="code-8-4" class="sampleCode">Code automatically inserted here...</pre>
+      <pre id="code-8-4" class="sampleCode">Код добавится сюда автоматически...</pre>
 
-      <p>So, what we did above was just define how to restart the game. We set <code>@running</code> to be true and then reset the ball, so that the ball will go back to its original position. </p>
+      <p>Итак, то, что мы сделали выше, просто определило, как перезапустить игру. Мы установим <code>@running</code> равен true а затем перезагрузим шар, так что мяч вернется в исходное положение. </p>
 
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
-
-    </section>
-  </article>
-
-  <article class="lesson"><h1>Lesson 8 - Escape Key Pauses the Game</h1>
-    <section class="page"><h1>Read, Set, Reset!</h1>
-
-      <p>We now have to go to the bottom of our <code>Ball</code> class and define our reset method. So, let’s go ahead and type:</p>
-
-      <pre id="code-8-5" class="sampleCode">Code automatically inserted here...</pre>
-
-      <p>All we did in the code above, was the same thing that we’ve done when we defined <code>update</code> and when we defined <code>initialize</code>. That is, we set the y to zero, which places the ball at the top position and set the x to random, so we don’t know where it’s going to come from on the x axis. </p>
-
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <a href="#prev" class="prev-lesson">&laquo; Предыдущий</a>
+      <a href="index.html">Вернуться к Урокам</a>
+      <a href="#next" class="next-lesson">Следующий &raquo;</a>
 
     </section>
   </article>
 
+  <article class="lesson"><h1>Урок 8 - Клавиша Escape - Пауза для Игры</h1>
+    <section class="page"><h1>Чтение, Установка, Сброс - Read, Set, Reset!</h1>
 
-  <article class="lesson"><h1>Lesson 8 - Escape Key Pauses the Game</h1>
-    <section class="page"><h1>Read, Set, Reset!</h1>
+      <p>Теперь нам нужно идти вниз нашего <code>Ball</code> класса и определить наш метод сброса. Итак, давай продолжим, введи:</p>
 
-      <p>Finally, we’re going to replace those two areas where we’ve repeated:</p>
+      <pre id="code-8-5" class="sampleCode">Код добавится сюда автоматически...</pre>
 
-      <pre id="code-8-6" class="sampleCode">Code automatically inserted here...</pre>
+      <p>Все, что мы сделали в коде выше, было тем же, что мы сделали, когда мы определили <code>update</code> и когда мы определили <code>initialize</code>. То есть мы устанавливаем y равным нулю, что помещает мяч в верхнее положение и устанавливает x в случайное, поэтому мы не знаем, откуда он будет поступать на оси x. </p>
 
-      <p>and replace it with <code>reset!</code>. Again, those two repetitions are under <code>def initialize</code> and <code>def update</code>. Your end result should look like this:</p>
-
-      <pre id="code-8-7" class="sampleCode">Code automatically inserted here...</pre>
-
-      <p>Yet again, here is the entire program you should have written so far:</p>
-      <pre id="code-8-8" class="sampleCode">Code automatically inserted here...</pre>
-
-      <p>That’s it for this lesson! You're starting to like this stuff, aren't you?! Now, let’s make the game more challenging by adding <a href="lesson_9.html">multiple balls in lesson 9</a>!</p>
-
-      <a href="#prev" class="prev-lesson">&laquo; Back</a>
-      <a href="index.html">Back to Lessons</a>
-      <a href="#next" class="next-lesson">Next &raquo;</a>
+      <a href="#prev" class="prev-lesson">&laquo; Предыдущий</a>
+      <a href="index.html">Вернуться к Урокам</a>
+      <a href="#next" class="next-lesson">Следующий &raquo;</a>
 
     </section>
   </article>
 
-    <a href="#top">Back to top</a>
+
+  <article class="lesson"><h1>Урок 8 - Клавиша Escape - Пауза для Игры</h1>
+    <section class="page"><h1>Чтение, Установка, Сброс - Read, Set, Reset!</h1>
+
+      <p>Наконец, мы собираемся заменить те две области, где мы повторили:</p>
+
+      <pre id="code-8-6" class="sampleCode">Код добавится сюда автоматически...</pre>
+
+      <p>и заменили это на <code>reset!</code>. Опять же, эти два повторения под <code>def initialize</code> и <code>def update</code>. Ваш итоговый результат должен выглядеть следующим образом:</p>
+
+      <pre id="code-8-7" class="sampleCode">Код добавится сюда автоматически...</pre>
+
+      <p>Еще раз, вот вся программа, которую ты написал на данный момент:</p>
+      <pre id="code-8-8" class="sampleCode">Код добавится сюда автоматически...</pre>
+
+      <p>Это всё, для этого урока! Тебе начинает нравиться эта штука, не так ли?! Теперь давайте сделаем игру более сложной, добавив <a href="lesson_9.html"> несколько шаров в уроке 9</a>!</p>
+
+      <a href="#prev" class="prev-lesson">&laquo; Предыдущий</a>
+      <a href="index.html">Вернуться к Урокам</a>
+      <a href="#next" class="next-lesson">Следующий &raquo;</a>
+
+    </section>
+  </article>
+
+    <a href="#top">Вернуться в начало</a>
 
 </body>
 </html>
